@@ -6,7 +6,7 @@ CREATE DATABASE EstoqueMentoria
 # adicionar tabela Insumos
 USE Estoque
 CREATE TABLE Insumos(
-	id_insumo int AUTO_INCREMENT,
+	id_insumo int IDENTITY(1,1),
 	nome_insumo varchar(50),
 	data_validade date,
 	lote int,
